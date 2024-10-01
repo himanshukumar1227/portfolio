@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>himanshu portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Himanshu Kumar</div>
+        <div >
+              <ul class="nav-link">
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#skill">Skill</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                 <!-- <li><a href="#project">Project</a></li> -->
+
+              </ul>
+        </div>
+
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Himanshu Kumar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"  onclick="toggleMenu()">
+                <span> </span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-link">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                                <!-- <li><a href="#project" onclick="toggleMenu()">Project</a></li> -->
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section-pic">
+        <img src="./asset/hk.jpg" alt=" himanshu kumar profile pic">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, i'm</p>
+            <h1 class="title">Himanshu Kumar</h1>
+            <p class="section-text-p2">Web developer</p>
+
+            <div class="btn-container">
+                <button class="btn-container-1" onclick="window.open('./asset/developer 1.png')">
+                    Download CV
+                </button>
+                <button class="btn-container-2" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                <img src="./asset/linkedin.png" 
+                alt="my linkedin profile"
+                onclick="location.href='http://www.linkedin.com'"
+                class="icon"
+                >
+                <img src="./asset/github.webp" 
+                alt="my github profile"
+                 onclick="location.href=' http://github.com/himanshukumar1227'"
+                class="icon"
+                >
+            </div>
+        </div>
+
+        
+    </section>
+      
+
+    <section id="about">
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container" >
+             <div class="section-pic">
+                <img src="./asset/himanshu 1.jpg" 
+                alt="profile picture"
+                class="about-pic">
+             </div>
+             <div class="about-detail-container">
+                   <div class="about-container">
+                         <div class="detail-container">
+                            <img src="./asset/exp.png" 
+                            alt="experience icon"
+                            class="icon">
+                            <h3>Experience</h3>
+                            <p>Fresher </p>
+                         </div>
+                         <div class="detail-container">
+                            <img src="./asset/education.jpg" 
+                            alt="education icon"
+                            class="icon">
+                            <h3>B.com Bachelor Degree</h3>
+                            
+                         </div>
+                   </div>
+                   <div class="text-container">
+                    <p>Hello my self himanshu kumar i am from kota rajasthan. i am currently pursuing my Bachelor degree . i have learn
+                        about full stack web development <br> that's all about me <br>thank you very much 
+                    </p>
+                   </div>
+             </div>
+        </div>
+
+        <!-- <img src="" 
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skill'"> -->
+    </section>
+
+    
+
+    <section id="skill">
+        <p class="section-text-p1">Explore My </p>
+         <h1 class="title"> Skills</h1>
+          <div class="skill-detail-container">
+             <div class="about-container">
+                  <div class="detail-container">
+                      <h2 class="skill-sub-title"> Frontend </h2><br>
+                      <div class="article-container">
+                          <article>
+                               <ul>
+                                <li>HTML </li><br>
+                                <LI> CSS ()</LI><br>
+                                <li>JAVA SCRIPT</li><br>
+                                
+                               </ul>
+                          </article>
+                      </div>
+                  <div >
+                      <h2 class="skill-sub-title"> Backend </h2><br>
+                      <div class="article-container">
+                          <article>
+                               <ul>
+                                <li>mongoDB</li><br>
+                                <LI> Express</LI><br>
+                                <li>React</li><br>
+                                <li>Node js</li>
+                                <li>SQl ( basic)</li>
+                               </ul>
+                          </article>
+                      </div>
+                  </div>
+             </div>
+          </div>
+    </section>
+
+    
+
+    <section id="contact">
+       
+         <p class="section-text-p1">Get in Touch </p>
+         <h1 class="title">Contact Me</h1>
+         <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./asset/gmail.png" 
+                alt="email image"
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container"></div>
+                <img src="./asset/linkedin.png" 
+                alt="linkedin image"
+                class="icon contact-icon linkedin">
+                <p><a href="http://www.linkedin.com">linkedin</a></p>
+            </div>
+         </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-link-container">
+                <ul class="nav-link">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <!-- <li><a href="#project">Project</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                 </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Himanshu Kumar All Rights Reserved. </p>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>
